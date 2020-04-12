@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="bfzheng&#39;s blog">
+  <meta name="description" content="摘要本博客使用 Hexo + github pages 搭建，具体搭建流程如下。 博客搭建1. Create a new project在 github 创建一个新的 repo，名称为：test(${your github name}, 下面我将会使用 test 代替).github.io，github只允许创建一个和用户名同名的 repo 用于开启 github pages，然后把项目 clon">
 <meta property="og:type" content="article">
-<meta property="og:title" content="how to build this blog">
+<meta property="og:title" content="How to build this blog">
 <meta property="og:url" content="http://yoursite.com/2020/04/12/how-to-build-this-blog/index.html">
 <meta property="og:site_name" content="bfzheng&#39;s blog">
-<meta property="og:description" content="bfzheng&#39;s blog">
+<meta property="og:description" content="摘要本博客使用 Hexo + github pages 搭建，具体搭建流程如下。 博客搭建1. Create a new project在 github 创建一个新的 repo，名称为：test(${your github name}, 下面我将会使用 test 代替).github.io，github只允许创建一个和用户名同名的 repo 用于开启 github pages，然后把项目 clon">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-12T04:25:15.000Z">
-<meta property="article:modified_time" content="2020-04-12T04:25:15.045Z">
+<meta property="article:modified_time" content="2020-04-12T05:08:44.437Z">
 <meta property="article:author" content="bfzheng">
 <meta name="twitter:card" content="summary">
 
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>how to build this blog | bfzheng's blog</title>
+  <title>How to build this blog | bfzheng's blog</title>
   
 
 
@@ -164,7 +164,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          how to build this blog
+          How to build this blog
         </h1>
 
         <div class="post-meta">
@@ -173,8 +173,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-04-12 12:25:15" itemprop="dateCreated datePublished" datetime="2020-04-12T12:25:15+08:00">2020-04-12</time>
+              <time title="Created: 2020-04-12 12:25:15 / Modified: 13:08:44" itemprop="dateCreated datePublished" datetime="2020-04-12T12:25:15+08:00">2020-04-12</time>
             </span>
 
           
@@ -188,7 +189,28 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>本博客使用 Hexo + github pages 搭建，具体搭建流程如下。</p>
+<h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><h3 id="1-Create-a-new-project"><a href="#1-Create-a-new-project" class="headerlink" title="1. Create a new project"></a>1. Create a new project</h3><p>在 github 创建一个新的 repo，名称为：test(${your github name}, 下面我将会使用 test 代替).github.io，github只允许创建一个和用户名同名的 repo 用于开启 github pages，然后把项目 clone 到本地。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone $&#123;your repo url&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Install-Hexo"><a href="#2-Install-Hexo" class="headerlink" title="2. Install Hexo"></a>2. Install Hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-Hexo-init-project"><a href="#3-Hexo-init-project" class="headerlink" title="3. Hexo init project"></a>3. Hexo init project</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init test.github.io</span><br><span class="line"></span><br><span class="line">$ cd test.github.io</span><br><span class="line"></span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-Run-local-server"><a href="#4-Run-local-server" class="headerlink" title="4. Run local server"></a>4. Run local server</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-Set-blog-infor"><a href="#5-Set-blog-infor" class="headerlink" title="5. Set blog infor"></a>5. Set blog infor</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"># Site</span><br><span class="line">title: test&#39;s note</span><br><span class="line">subtitle:</span><br><span class="line">description: test&#39;s personal blog</span><br><span class="line">author: test</span><br><span class="line">language:</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-Set-use-git-to-deploy"><a href="#6-Set-use-git-to-deploy" class="headerlink" title="6. Set use git to deploy"></a>6. Set use git to deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"># Deployment</span><br><span class="line">## Docs: http:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:test&#x2F;test.github.io.git </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-Create-a-new-post"><a href="#7-Create-a-new-post" class="headerlink" title="7. Create a new post"></a>7. Create a new post</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;hello-world&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="8-Generate-and-deploy"><a href="#8-Generate-and-deploy" class="headerlink" title="8. Generate and deploy"></a>8. Generate and deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --deploy</span><br></pre></td></tr></table></figure>
+
+<h3 id="9-Change-blog-theme"><a href="#9-Change-blog-theme" class="headerlink" title="9. Change blog theme"></a>9. Change blog theme</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">For instance, How to use the following theme.</span><br><span class="line">https:&#x2F;&#x2F;hexo.io&#x2F;hexo-theme-light&#x2F;</span><br><span class="line"></span><br><span class="line">## Install it</span><br><span class="line">$ cd test.github.io</span><br><span class="line">$ git clone git:&#x2F;&#x2F;github.com&#x2F;tommy351&#x2F;hexo-theme-light.git themes&#x2F;light</span><br><span class="line"></span><br><span class="line">## Update the above files</span><br><span class="line">$ themes&#x2F;light</span><br><span class="line">$ git pull</span><br><span class="line"></span><br><span class="line">## Set information to use the theme</span><br><span class="line">$ cd test.github.io</span><br><span class="line">$ vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"># Extensions</span><br><span class="line">## Plugins: http:&#x2F;&#x2F;hexo.io&#x2F;plugins&#x2F;</span><br><span class="line">## Themes: http:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F;</span><br><span class="line">theme: light</span><br></pre></td></tr></table></figure>
+
+<h3 id="10-Create-a-new-page"><a href="#10-Create-a-new-page" class="headerlink" title="10. Create a new page"></a>10. Create a new page</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page aboutme</span><br><span class="line"></span><br><span class="line">$ cd source&#x2F;aboutme&#x2F;</span><br><span class="line"></span><br><span class="line">$ vi index.md</span><br></pre></td></tr></table></figure>
+
     </div>
 
     
@@ -265,6 +287,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客搭建"><span class="nav-number">2.</span> <span class="nav-text">博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Create-a-new-project"><span class="nav-number">2.1.</span> <span class="nav-text">1. Create a new project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Install-Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">2. Install Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Hexo-init-project"><span class="nav-number">2.3.</span> <span class="nav-text">3. Hexo init project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Run-local-server"><span class="nav-number">2.4.</span> <span class="nav-text">4. Run local server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Set-blog-infor"><span class="nav-number">2.5.</span> <span class="nav-text">5. Set blog infor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Set-use-git-to-deploy"><span class="nav-number">2.6.</span> <span class="nav-text">6. Set use git to deploy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Create-a-new-post"><span class="nav-number">2.7.</span> <span class="nav-text">7. Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Generate-and-deploy"><span class="nav-number">2.8.</span> <span class="nav-text">8. Generate and deploy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Change-blog-theme"><span class="nav-number">2.9.</span> <span class="nav-text">9. Change blog theme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-Create-a-new-page"><span class="nav-number">2.10.</span> <span class="nav-text">10. Create a new page</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
